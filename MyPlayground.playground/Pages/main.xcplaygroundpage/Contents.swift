@@ -16,8 +16,15 @@
 // write your code here
 
 
+func howManyCountriesInContinent(continent: String, numberOfCountries: Int){
 
+    print("\(continent) is a continent which contains \(numberOfCountries)countries.")
 
+}
+
+var continent = "North America"
+var numOfCountries = 3
+howManyCountriesInContinent(continent, numberOfCountries: numOfCountries)
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
  */
@@ -25,7 +32,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+greeting("Danny", greeting: "Hello")
 
 
 
@@ -33,7 +40,7 @@ greeting("Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) {
     print("There are \(days) in \(month)")
 }
 
@@ -48,8 +55,16 @@ daysInMonth("November", days: 30)
 // write your code here
 
 
+func numberOfBottles(beverage: String, numberOfBottles: Int, placeOnWall: String){
+    print("\(numberOfBottles) bottles of \(beverage) on the \(placeOnWall) wall.")
 
+}
 
+var numOfBottles = 30
+var beverage = "Sprite"
+var location = "top shelf"
+
+numberOfBottles(beverage, numberOfBottles: numOfBottles, placeOnWall: location)
 /*:
  [Solution](solution)
  */
